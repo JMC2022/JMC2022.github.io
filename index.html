@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IAltaïr</title>
+  <script src="script.js" type="text/javascript" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main>
+      <div class="header"> ᕗ IAltaïr - by Crivelli José Marcos</div>
+      <div class="terminal" id="terminalWindow" >
+        <section id="terminal">
+          <div class="command">Login Succeed - <span class="error" id="date"></span></div>
+          <div class="title">ᕗ Altaïr</div>
+          Hello and Welcome! To view a list of command type <span class="command">help</span>
+        </section>
+        <div class="prompt">
+          <span class="command">λ</span> <span class="title">Guest</span> <input id="promtInput"/>
+        </div>
+      </div>
+    </main>
+    <div class="hidden" id="promptClone">
+      <span class="command">λ</span> <span class="title">Guest</span> <span class="promtCloneInput"></span>
+      <div class="promtCloneContent"></div>
+    </div>
+    <div class="hidden" id="help">
+      <div class="sectionTitle">You can type some of this command: </div>
+      <div class="indent">
+        <div>
+          <span class="command">about</span>:
+          <div class="indent">About me.</div> 
+        </div>
+        <div>
+          <span class="command">social</span>:
+          <div class="indent">Social Net.</div> 
+        </div>
+        <div>
+          <span class="command">skills</span>:
+          <div class="indent">Technologies and Skills i work with.</div> 
+        </div>
+        <div>
+          <span class="command">education</span>:
+          <div class="indent">About my knowledge and training.</div> 
+        </div>
+        <div>
+          <span class="command">experience</span>:
+          <div class="indent">Where i work for now.</div> 
+        </div>
+        <div>
+          <span class="command">projects</span>:
+          <div class="indent">Proyects that i have done or i working on.</div> 
+        </div>
+        <div>
+          <span class="command">clear</span>:
+          <div class="indent">Clear the history of terminal</div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden" id="projects">
+      <div class="sectionTitle">PROJECTS: </div>
+      <div class="indent">
+        <span class="title">Bingo Vintage</span> - <a style="text-decoration: none; "href="https://github.com/user/proyecto" target="_blank"><span class="command">Link pending to load...</span> </a>
+      </div>
+      <div class="indent">
+        <span class="title">This template</span> - <a style="text-decoration: none; "href="https://github.com/accesibleprogramacion/portfolio-terminal" target="_blank"><span class="command">Link</span> </a>
+      </div>
+    </div>
+
+    <div class="hidden" id="skills">
+      <div class="sectionTitle">Technologies and Skills: </div>
+      <div class="indent">
+        <div>
+          <span class="command">PROGRAMMING</span>:
+          <div class="indent">
+            <span class="title">.Net MVC ,</span>
+            <span class="title">Asp-Net Core ,</span>
+            <span class="title">Dapper ,</span>
+            <span class="title">EntityFramework ,</span>
+            <span class="title">Sql Server ,</span>
+            <span class="title">jQuery ,</span>
+            <span class="title">JavaScript ,</span>
+            <span class="title">CSS ,</span>
+            <span class="title">HTML ,</span>
+            <span class="title">GIT</span>
+          </div> 
+        </div>
+        <div>
+          <span class="command">DESIGN</span>:
+          <div class="indent">
+            <span class="title">Illustrator ,</span>
+            <span class="title">Photoshop ,</span>
+            <span class="title">CorelDraw</span>
+          </div> 
+        </div>
+        <div>
+          <span class="command">LANGUAGES</span>:
+          <div class="indent">
+            <span class="title">Español ,</span>
+            <span class="title">English ,</span>
+            <span class="title">Italiano</span>
+          </div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden" id="about">
+      <div class="sectionTitle">ABOUT ME: </div>
+        <div class="indent">
+          Hi! my name is <span class="command">Crivelli , José Marcos.</span>
+          I`m Electronic Engineer and a proactive developer. Always learning new techs with self-taught abilities. Recently i´v created a small company named NVC (Nexus Virtual Corp.) I would like join you to develop something awesome and bring help to future customers.
+        </div> 
+    </div>
+
+    <div class="hidden" id="experience">
+      <div class="sectionTitle">EXPERIENCE: </div>
+      <div class="indent">
+        <span class="title">FullStack DEV and Frontend Dev - NVC</span> - <span class="command">2022 - Today</span>
+        <div class="indent">
+          With the latest knowledge acquired I am working on my own, for now, to practice everything I know and continue studying.
+          My goal is bring help to people who need last technologies and they dont know how implement. 
+        </div> 
+      </div>
+      <div class="indent">
+        <span class="title">BINGO Proyect for Technological Pole of Mina Clavero</span> - <span class="command">2022 - Today</span>
+        <div class="indent">
+          At the end of the couse i made in .Net, the final proyect was an app wich show 4 Tickets of Bingo and make it playable. I made something else and create an app where you can register , login, play 1 to 4 tickets, bring your playing history and more. It was a very big challenge and a very enjoyable trip. 
+        </div> 
+      </div>
+    </div>
+
+    <div class="hidden" id="social">
+      <div class="sectionTitle">SOCIAL: </div>
+      <div class="indent">
+        <span class="title"><img src="https://github.githubassets.com/favicons/favicon.png"/></span> - <a style="text-decoration: none;" href="https://github.com/JMC2022" target="_blank"><span class="command">GitHub</span></a>
+      </div>
+      <div class="indent">
+        <span class="title"><img src="https://static.licdn.com/sc/h/5bukxbhy9xsil5mb7c2wulfbx"/></span> - <a style="text-decoration:none;" href="https://www.linkedin.com/in/altair-desmond-99bb0224a" target="_blank"><span class="command">Linkedin</span></a>
+      </div>
+      <div class="indent">
+        <span class="title"><img src="https://static.cdninstagram.com/rsrc.php/v3/yt/r/30PrGfR3xhB.png"/></span> - <a style="text-decoration: none;" href="https://www.instagram.com/nexusvirtualcorp/" target="_blank"><span class="command">Instagram</span></a>
+      </div>
+    </div>
+
+    <div class="education hidden" id="education">
+      <div class="sectionTitle">EDUCATIONAL TRAINING: </div>
+      <div class="indent">
+        <span class="title">Electronic Engineer - UTN Mar del plata</span> <span class="command">Finish 2011</span>
+        <div class="indent">
+          Since i´v finish in a tech school, my vocation always was refered on technologies in gral, so i studied Electronic Engineer in the Univertity of Mar del plata. Also made lot of courses and carrers of Networking and Repairing Computers to improove my knowledge and habilities.
+        </div> 
+      </div>
+      <div class="indent">
+        <span class="title">.Net Course by Technological Pole of Mina Clavero</span> <span class="command">Finish 2022</span>
+        <div class="indent">
+          Last Year since a pandemic situation, i chose still learning and bring some changes on my life. So i meet awesome people who carried on the ".Net Course" , with impressive pedagogical skils. New Tech are comming for me...
+        </div> 
+      </div>
+    </div>
+</body>
+</html>
